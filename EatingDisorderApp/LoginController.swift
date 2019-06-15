@@ -20,7 +20,7 @@ class LoginController: UIViewController {
         return im
     }()
     
-    //Enter Email Container ~Louis Deguito June 14,2019
+    //Enter Email Container and textfield ~Louis Deguito June 14,2019
     lazy var emailContainerView: UIView = {
         let view = UIView()
         return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), emailTextField)
@@ -31,7 +31,7 @@ class LoginController: UIViewController {
         return tf.textField(withPlaceHolder: "Email", isSecureTextEntry: false)
     }()
     
-    //Enter Password Container ~Louis Deguito June 14,2019
+    //Enter Password Container and textfield ~Louis Deguito June 14,2019
     lazy var passwordContainerView: UIView = {
         let view = UIView()
         return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_lock_outline_white_2x"), passwordTextField)
@@ -80,7 +80,7 @@ class LoginController: UIViewController {
         navigationController?.pushViewController(SignUpController(), animated: true)
     }
     
-    // View Helper Restraints
+    // View Constraints
     func configureViewComponents() {
         view.backgroundColor = UIColor.mainBlue()
         navigationController?.navigationBar.isHidden = true
