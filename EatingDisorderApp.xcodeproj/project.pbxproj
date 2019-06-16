@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
 		BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C322B26A2C00E47B43 /* AppDelegate.swift */; };
-		BFB334C622B26A2C00E47B43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C522B26A2C00E47B43 /* ViewController.swift */; };
 		BFB334C922B26A2C00E47B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334C722B26A2C00E47B43 /* Main.storyboard */; };
 		BFB334CB22B26A2E00E47B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CA22B26A2E00E47B43 /* Assets.xcassets */; };
 		BFB334CE22B26A2E00E47B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,11 @@
 		BFB334DA22B34C5300E47B43 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334D922B34C5300E47B43 /* SignUpController.swift */; };
 		BFB334DC22B34CB000E47B43 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DB22B34CB000E47B43 /* HomeController.swift */; };
 		BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DD22B34CEC00E47B43 /* Extensions.swift */; };
+		BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */; };
+		BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */; };
+		BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */; };
+		BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91D22B5FD82004B3120 /* ViewLogTableViewController.swift */; };
+		BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +30,6 @@
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB334C022B26A2C00E47B43 /* EatingDisorderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingDisorderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB334C322B26A2C00E47B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFB334C522B26A2C00E47B43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFB334C822B26A2C00E47B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB334CA22B26A2E00E47B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB334CD22B26A2E00E47B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		BFB334D922B34C5300E47B43 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		BFB334DB22B34CB000E47B43 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		BFB334DD22B34CEC00E47B43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMealViewController.swift; sourceTree = "<group>"; };
+		BFEDF91D22B5FD82004B3120 /* ViewLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewController.swift; sourceTree = "<group>"; };
+		BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				BFB334C322B26A2C00E47B43 /* AppDelegate.swift */,
-				BFB334C522B26A2C00E47B43 /* ViewController.swift */,
 				BFB334C722B26A2C00E47B43 /* Main.storyboard */,
 				BFB334CA22B26A2E00E47B43 /* Assets.xcassets */,
 				BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */,
@@ -99,6 +106,11 @@
 				BFB334D922B34C5300E47B43 /* SignUpController.swift */,
 				BFB334DB22B34CB000E47B43 /* HomeController.swift */,
 				BFB334DD22B34CEC00E47B43 /* Extensions.swift */,
+				BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */,
+				BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */,
+				BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */,
+				BFEDF91D22B5FD82004B3120 /* ViewLogTableViewController.swift */,
+				BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -238,12 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB334C622B26A2C00E47B43 /* ViewController.swift in Sources */,
 				BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */,
+				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
 				BFB334D822B34BF800E47B43 /* LoginController.swift in Sources */,
+				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
+				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFB334DA22B34C5300E47B43 /* SignUpController.swift in Sources */,
+				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
 				BFB334DC22B34CB000E47B43 /* HomeController.swift in Sources */,
+				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
