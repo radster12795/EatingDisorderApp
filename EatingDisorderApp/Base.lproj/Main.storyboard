@@ -52,7 +52,7 @@
                     <connections>
                         <segue destination="FsY-HE-XDA" kind="relationship" relationship="viewControllers" id="u2D-JT-bPR"/>
                         <segue destination="4hY-bM-eGu" kind="relationship" relationship="viewControllers" id="DTR-s4-bxs"/>
-                        <segue destination="rfD-wd-MLL" kind="relationship" relationship="viewControllers" id="81O-lo-125"/>
+                        <segue destination="D2L-7d-v8h" kind="relationship" relationship="viewControllers" id="81O-lo-125"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXx-Gk-dsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,11 +262,32 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0kH-Dy-HW7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="dOy-ik-WMF"/>
+                    <navigationItem key="navigationItem" id="8by-Ze-Q0r">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="5uK-Cr-1Al"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4v-MI-r4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="90"/>
+            <point key="canvasLocation" x="2271" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HQA-XD-uWd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxT-dh-eAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D2L-7d-v8h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="dOy-ik-WMF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ghm-Ck-KjS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rfD-wd-MLL" kind="relationship" relationship="rootViewController" id="0EV-bC-QtY"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1479.7101449275362" y="89.732142857142847"/>
         </scene>
     </scenes>
     <resources>
