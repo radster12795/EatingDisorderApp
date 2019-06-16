@@ -9,6 +9,15 @@
 import UIKit
 
 class LogMealViewController: UIViewController {
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var foodTextField: UITextField!
+    @IBOutlet weak var placeTextField: UITextField!
+    @IBOutlet weak var companionTextField: UITextField!
+    @IBOutlet weak var feelingsTextField: UITextField!
+    @IBOutlet weak var mealTextField: UITextField!
+    @IBOutlet weak var bingeTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
