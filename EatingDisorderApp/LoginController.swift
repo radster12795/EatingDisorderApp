@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginController: UIViewController {
     
@@ -73,11 +74,27 @@ class LoginController: UIViewController {
     
     // Selectors
     @objc func handleLogin() {
-        print ("Handle Login.....")
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        logInUser(withEmail: email, password: password)
     }
     
     @objc func handleShowSignUp() {
         navigationController?.pushViewController(SignUpController(), animated: true)
+    }
+    
+    // API
+    func logInUser(withEmail email: String, password: String){
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if let error = error {
+                print("Failed to sign in user with error: ", error.localizedDescription)
+                return
+            }
+            
+            print("Successfully logged user in....")
+        }
     }
     
     // View Constraints

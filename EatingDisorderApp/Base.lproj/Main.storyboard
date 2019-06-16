@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FlI-jI-feM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,25 +10,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Log-->
+        <scene sceneID="WZ4-il-KnX">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="View Log" id="NcQ-wH-Dpj" customClass="ViewLogTableViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J1w-Fm-Kly">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IHm-xc-lS2">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IHm-xc-lS2" id="8dD-Ao-pZX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NcQ-wH-Dpj" id="Hiv-qQ-SLj"/>
+                            <outlet property="delegate" destination="NcQ-wH-Dpj" id="Vgs-Af-emu"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="View Logs" image="icons8-spiral-bound-booklet-24" id="gIK-9s-WNb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oX9-5Q-Med" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="546"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="CP4-4J-xzv">
+            <objects>
+                <viewController id="jE0-Ap-M6V" customClass="LoginViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efz-5G-1wM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LUP-Rm-3s2"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agw-jX-rxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="118"/>
+            <point key="canvasLocation" x="-1280" y="-492"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="R7f-GI-JTS">
+            <objects>
+                <viewController id="9Rv-4V-iN4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMg-Sm-3IH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AVH-jJ-gcM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAr-r8-aIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-889"/>
+        </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="5Lu-pG-TjG">
+            <objects>
+                <tabBarController id="FlI-jI-feM" customClass="HomeScreenViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8gA-fh-35j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NcQ-wH-Dpj" kind="relationship" relationship="viewControllers" id="kVe-sk-oIs"/>
+                        <segue destination="FsY-HE-XDA" kind="relationship" relationship="viewControllers" id="dhv-dr-N8j"/>
+                        <segue destination="adU-Vp-FbJ" kind="relationship" relationship="viewControllers" id="Sty-XV-9bX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1Z-Jx-5vR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-183"/>
+        </scene>
+        <!--Log Meal-->
         <scene sceneID="Wgm-Fw-Kem">
             <objects>
-                <viewController id="FsY-HE-XDA" sceneMemberID="viewController">
+                <viewController title="Log Meal" id="FsY-HE-XDA" customClass="LogMealViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y0S-0R-4Qr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,14 +99,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGf-dT-RA8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="What is your Gender?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-gF-dU7">
-                                        <rect key="frame" x="20" y="79" width="374" height="59"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDC-WJ-yge">
                                         <rect key="frame" x="20" y="137" width="374" height="45"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -126,6 +181,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is you gender?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07I-IS-lJz">
+                                        <rect key="frame" x="80" y="94" width="255" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Umn-6x-AwP" secondAttribute="bottom" constant="134" id="1uw-rM-tyb"/>
@@ -143,7 +205,6 @@
                                     <constraint firstItem="Umn-6x-AwP" firstAttribute="top" secondItem="hhB-jh-u0U" secondAttribute="bottom" constant="91" id="H5U-V0-ClI"/>
                                     <constraint firstItem="oCV-Lc-Fbt" firstAttribute="leading" secondItem="qGf-dT-RA8" secondAttribute="leading" constant="20" id="H5c-OK-bD2"/>
                                     <constraint firstAttribute="trailing" secondItem="MAG-qT-eom" secondAttribute="trailing" constant="20" id="HLW-Be-ohw"/>
-                                    <constraint firstAttribute="trailing" secondItem="yIC-gF-dU7" secondAttribute="trailing" constant="20" id="Lui-JS-HTQ"/>
                                     <constraint firstItem="bnn-Ew-hep" firstAttribute="top" secondItem="hhB-jh-u0U" secondAttribute="bottom" constant="8" id="MSi-xZ-60p"/>
                                     <constraint firstItem="bnn-Ew-hep" firstAttribute="top" secondItem="au0-rv-f6B" secondAttribute="bottom" constant="52" id="N73-Wi-d3u"/>
                                     <constraint firstAttribute="trailing" secondItem="bnn-Ew-hep" secondAttribute="trailing" constant="20" id="OoD-7f-eR0"/>
@@ -158,10 +219,7 @@
                                     <constraint firstItem="Lca-Ud-iG5" firstAttribute="top" secondItem="EgB-1K-5oo" secondAttribute="bottom" constant="52" id="X51-oJ-SlH"/>
                                     <constraint firstItem="EgB-1K-5oo" firstAttribute="top" secondItem="q9g-Pp-Xi4" secondAttribute="bottom" constant="52" id="acf-AY-VA1"/>
                                     <constraint firstItem="QDC-WJ-yge" firstAttribute="leading" secondItem="qGf-dT-RA8" secondAttribute="leading" constant="20" id="bfv-fV-e8M"/>
-                                    <constraint firstItem="q9g-Pp-Xi4" firstAttribute="top" secondItem="yIC-gF-dU7" secondAttribute="bottom" constant="52" id="duE-nN-5qH"/>
-                                    <constraint firstItem="yIC-gF-dU7" firstAttribute="top" secondItem="qGf-dT-RA8" secondAttribute="top" constant="79" id="fVL-t5-86b"/>
                                     <constraint firstItem="au0-rv-f6B" firstAttribute="top" secondItem="Lca-Ud-iG5" secondAttribute="bottom" constant="52" id="fdX-xm-jfn"/>
-                                    <constraint firstItem="yIC-gF-dU7" firstAttribute="leading" secondItem="qGf-dT-RA8" secondAttribute="leading" constant="20" id="gTF-nO-Fgn"/>
                                     <constraint firstItem="au0-rv-f6B" firstAttribute="top" secondItem="MAG-qT-eom" secondAttribute="bottom" constant="8" id="gp6-sb-4oh"/>
                                     <constraint firstItem="Lca-Ud-iG5" firstAttribute="leading" secondItem="qGf-dT-RA8" secondAttribute="leading" constant="20" id="hZh-Ua-ig9"/>
                                     <constraint firstAttribute="trailing" secondItem="Lca-Ud-iG5" secondAttribute="trailing" constant="20" id="jJt-Jg-BR8"/>
@@ -183,10 +241,71 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PfB-TG-QQY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Log Meal" image="icons8-copybook-30" id="Z9H-Pn-M5d"/>
+                    <connections>
+                        <outlet property="genderLabel" destination="07I-IS-lJz" id="Sau-4W-FSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6M-HQ-Kno" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972.46376811594212" y="117.85714285714285"/>
+            <point key="canvasLocation" x="-220" y="546"/>
+        </scene>
+        <!--More View Controller-->
+        <scene sceneID="xrk-nx-CpC">
+            <objects>
+                <viewController id="fgT-Pt-ZgL" customClass="MoreViewController" customModule="EatingDisorderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NIg-tT-POV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bblablablaba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOm-tf-zcR">
+                                <rect key="frame" x="51" y="140" width="183" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0CK-Jj-kTv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TRi-l6-Pkz">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="G4p-6F-wCt">
+                            <connections>
+                                <action selector="signOutButton:" destination="fgT-Pt-ZgL" id="BS2-lp-fyG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeh-xn-aXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513.0434782608697" y="545.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QmV-C9-RbN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adU-Vp-FbJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="trv-EF-pKw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8eq-5T-YKx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UX7-Jc-HCy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="fgT-Pt-ZgL" kind="relationship" relationship="rootViewController" id="aEj-Pm-CBX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJa-Zm-zwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602.89855072463774" y="545.75892857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-copybook-30" width="30" height="30"/>
+        <image name="icons8-spiral-bound-booklet-24" width="24" height="24"/>
+    </resources>
 </document>
