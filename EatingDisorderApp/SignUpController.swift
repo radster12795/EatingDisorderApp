@@ -107,12 +107,20 @@ class SignUpController: UIViewController {
             guard let uid = result?.user.uid else { return }
             
             let values = ["email": email, "username": username]
+            let values2 = ["food": email, "gender": email, "companion": email]
             
             Firestore.firestore().collection("Users").document(uid).setData(values, completion: { (error) in
                 if let error = error {
                     print("Failed to sign user up with error: ", error.localizedDescription)
                     return
                 }
+                Firestore.firestore().collection("Users").document(uid).collection("MealLog").addDocument(data: values2, completion: { (error) in
+                    if let error = error {
+                        print("Failed to add meal log ", error.localizedDescription)
+                        return
+                    }
+                    
+                })
                 
                 print("Successfully signed up user......")
             })
