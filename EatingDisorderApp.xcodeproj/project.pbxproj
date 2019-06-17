@@ -13,9 +13,6 @@
 		BFB334CB22B26A2E00E47B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CA22B26A2E00E47B43 /* Assets.xcassets */; };
 		BFB334CE22B26A2E00E47B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */; };
 		BFB334D622B26BF900E47B43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */; };
-		BFB334D822B34BF800E47B43 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334D722B34BF800E47B43 /* LoginController.swift */; };
-		BFB334DA22B34C5300E47B43 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334D922B34C5300E47B43 /* SignUpController.swift */; };
-		BFB334DC22B34CB000E47B43 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DB22B34CB000E47B43 /* HomeController.swift */; };
 		BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DD22B34CEC00E47B43 /* Extensions.swift */; };
 		BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */; };
 		BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */; };
@@ -35,9 +32,6 @@
 		BFB334CD22B26A2E00E47B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB334CF22B26A2E00E47B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BFB334D722B34BF800E47B43 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		BFB334D922B34C5300E47B43 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		BFB334DB22B34CB000E47B43 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		BFB334DD22B34CEC00E47B43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -102,9 +96,6 @@
 				BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */,
 				BFB334CF22B26A2E00E47B43 /* Info.plist */,
 				BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */,
-				BFB334D722B34BF800E47B43 /* LoginController.swift */,
-				BFB334D922B34C5300E47B43 /* SignUpController.swift */,
-				BFB334DB22B34CB000E47B43 /* HomeController.swift */,
 				BFB334DD22B34CEC00E47B43 /* Extensions.swift */,
 				BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */,
 				BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */,
@@ -252,13 +243,10 @@
 			files = (
 				BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */,
 				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
-				BFB334D822B34BF800E47B43 /* LoginController.swift in Sources */,
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
-				BFB334DA22B34C5300E47B43 /* SignUpController.swift in Sources */,
 				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
-				BFB334DC22B34CB000E47B43 /* HomeController.swift in Sources */,
 				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
