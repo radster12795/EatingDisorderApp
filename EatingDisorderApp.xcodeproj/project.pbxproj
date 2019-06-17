@@ -14,6 +14,7 @@
 		BFB334CE22B26A2E00E47B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */; };
 		BFB334D622B26BF900E47B43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */; };
 		BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DD22B34CEC00E47B43 /* Extensions.swift */; };
+		BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */; };
 		BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */; };
 		BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */; };
 		BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */; };
@@ -33,6 +34,7 @@
 		BFB334CF22B26A2E00E47B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFB334DD22B34CEC00E47B43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMealViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				BFEDF91B22B5FD4E004B3120 /* LogMealViewController.swift */,
 				BFEDF91D22B5FD82004B3120 /* ViewLogTableViewController.swift */,
 				BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */,
+				BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
+				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
 				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
 				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);
