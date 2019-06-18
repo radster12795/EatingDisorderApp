@@ -7,40 +7,83 @@
 //
 
 import UIKit
+import Firebase
+
+struct Dates {
+    var dates:String
+}
 
 class ViewLogTableViewController: UITableViewController {
-
+    
+    var db: Firestore!
+    var datesArray = [Dates]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+      db = Firestore.firestore()
+        loadData()
     }
 
-    // MARK: - Table view data source
+    func loadData(){
+        
+        
+        db.collection("User").getDocuments { (querySnapshot, error) in
+            if let error = error
+            {
+                print("\(error.localizedDescription)")
+            }
+            else
+            {
+                if let snapshot = querySnapshot{
+                for document in (querySnapshot?.documents)! {
+                    
+                    
+                        //self.title = Title
+                        let data = document.data()
+                        let dates = data["email"] as? String
+                    let newDate = Dates(dates: dates!)
+                        self.datesArray.append(newDate)
+                        //self.numOfCells += 1
+                    print(dates)
+                    
+                }
+                
+                self.tableView.reloadData()
+                }
+            }
+        }
+        
+    }
+        
+    
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return datesArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         // Configure the cell...
+        let dates = datesArray[indexPath.row]
+        cell.textLabel?.text = "\(dates.dates)"
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
