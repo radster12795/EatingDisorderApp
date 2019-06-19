@@ -7,40 +7,101 @@
 //
 
 import UIKit
+import Firebase
+
+ //Strict for data being recieved Michael Singh 17/06/2019
+struct Dates {
+    var dates:String
+    var meal:String
+}
 
 class ViewLogTableViewController: UITableViewController {
+    
 
+    var db: Firestore!
+    
+    var datesArray = [Dates]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+      db = Firestore.firestore()
+        loadData()
+        
+        
     }
 
-    // MARK: - Table view data source
+    //Retrieving data from current user Michael Singh 17/06/2019
+    func loadData(){
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        db.collection("Users").document(uid).collection("MealLog").getDocuments { (querySnapshot, error) in
+            if let error = error
+            {
+                print("\(error.localizedDescription)")
+            }
+            else
+            {
+                if let snapshot = querySnapshot{
+                for document in (querySnapshot?.documents)! {
+                    
+                        let data = document.data()
+                        let dates = data["DateTime"] as? Date ?? Date()
+                        let meal = data["Meal"] as? String ?? ""
+    
+                    let format = DateFormatter()
+                    format.dateFormat = "yyyy-MM-dd"
+                    let formattedDate = format.string(from: dates)
+                    
+                    
+                    let newDate = Dates(dates: formattedDate, meal: meal)
+                        self.datesArray.append(newDate)
+                    
+                    print(dates)
+                    print(meal)
+                    
+                }
+                
+                self.tableView.reloadData()
+                }
+            }
+        }
+        
+    }
+        
+    
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return datesArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as! ViewLogTableViewCell
 
         // Configure the cell...
-
+        let dates = datesArray[indexPath.row]
+        
+         cell.dateLabel.text = dates.dates
+         cell.mealLabel.text = dates.meal
+        
         return cell
     }
-    */
+ 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
 
     /*
     // Override to support conditional editing of the table view.
