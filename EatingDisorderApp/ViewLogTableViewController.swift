@@ -9,30 +9,36 @@
 import UIKit
 import Firebase
 
+ //Strict for data being recieved Michael Singh 17/06/2019
 struct Dates {
     var dates:String
+    var meal:String
 }
 
 class ViewLogTableViewController: UITableViewController {
     
+
     var db: Firestore!
+    
     var datesArray = [Dates]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
       db = Firestore.firestore()
         loadData()
+        
+        
     }
 
+    //Retrieving data from current user Michael Singh 17/06/2019
     func loadData(){
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         
-        
-        db.collection("User").getDocuments { (querySnapshot, error) in
+        db.collection("Users").document(uid).collection("MealLog").getDocuments { (querySnapshot, error) in
             if let error = error
             {
                 print("\(error.localizedDescription)")
@@ -42,14 +48,20 @@ class ViewLogTableViewController: UITableViewController {
                 if let snapshot = querySnapshot{
                 for document in (querySnapshot?.documents)! {
                     
-                    
-                        //self.title = Title
                         let data = document.data()
-                        let dates = data["email"] as? String
-                    let newDate = Dates(dates: dates!)
+                        let dates = data["DateTime"] as? Date ?? Date()
+                        let meal = data["Meal"] as? String ?? ""
+    
+                    let format = DateFormatter()
+                    format.dateFormat = "yyyy-MM-dd"
+                    let formattedDate = format.string(from: dates)
+                    
+                    
+                    let newDate = Dates(dates: formattedDate, meal: meal)
                         self.datesArray.append(newDate)
-                        //self.numOfCells += 1
+                    
                     print(dates)
+                    print(meal)
                     
                 }
                 
@@ -75,15 +87,21 @@ class ViewLogTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as! ViewLogTableViewCell
 
         // Configure the cell...
         let dates = datesArray[indexPath.row]
-        cell.textLabel?.text = "\(dates.dates)"
-
+        
+         cell.dateLabel.text = dates.dates
+         cell.mealLabel.text = dates.meal
+        
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
+		9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */; };
 		BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C322B26A2C00E47B43 /* AppDelegate.swift */; };
 		BFB334C922B26A2C00E47B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334C722B26A2C00E47B43 /* Main.storyboard */; };
 		BFB334CB22B26A2E00E47B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CA22B26A2E00E47B43 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatingDisorderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF129F9AC67C26CE11C9936 /* Pods-EatingDisorderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.release.xcconfig"; sourceTree = "<group>"; };
+		9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewCell.swift; sourceTree = "<group>"; };
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB334C022B26A2C00E47B43 /* EatingDisorderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingDisorderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB334C322B26A2C00E47B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				BFEDF91D22B5FD82004B3120 /* ViewLogTableViewController.swift */,
 				BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */,
 				BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */,
+				9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */,
 				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
+				9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
