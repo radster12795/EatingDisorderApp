@@ -27,6 +27,9 @@ class ViewLogTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.contentInset = UIEdgeInsets(top: 110,left: 0,bottom: 0,right: 0)
+        self.tableView.separatorStyle = .none
+
         
       db = Firestore.firestore()
         loadData()
@@ -48,16 +51,17 @@ class ViewLogTableViewController: UITableViewController {
                 if let snapshot = querySnapshot{
                 for document in (querySnapshot?.documents)! {
                     
+                    
                         let data = document.data()
-                        let dates = data["DateTime"] as? Date ?? Date()
+                    
+                        let dates = data["DateTime"] as? String ?? ""
+                    
                         let meal = data["Meal"] as? String ?? ""
     
-                    let format = DateFormatter()
-                    format.dateFormat = "yyyy-MM-dd"
-                    let formattedDate = format.string(from: dates)
+                    let mySubstring = dates.prefix(10)
                     
                     
-                    let newDate = Dates(dates: formattedDate, meal: meal)
+                    let newDate = Dates(dates: String(mySubstring), meal: meal)
                         self.datesArray.append(newDate)
                     
                     print(dates)
@@ -95,6 +99,7 @@ class ViewLogTableViewController: UITableViewController {
         
          cell.dateLabel.text = dates.dates
          cell.mealLabel.text = dates.meal
+        
         
         return cell
     }
