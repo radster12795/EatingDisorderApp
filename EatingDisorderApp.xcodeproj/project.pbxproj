@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
 		9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */; };
+		BF55360522BE4B63000E18BD /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF55360422BE4B63000E18BD /* TermsOfUseViewController.swift */; };
+		BF55360722BE53F7000E18BD /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF55360622BE53F7000E18BD /* AboutUsViewController.swift */; };
 		BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C322B26A2C00E47B43 /* AppDelegate.swift */; };
 		BFB334C922B26A2C00E47B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334C722B26A2C00E47B43 /* Main.storyboard */; };
 		BFB334CB22B26A2E00E47B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CA22B26A2E00E47B43 /* Assets.xcassets */; };
 		BFB334CE22B26A2E00E47B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */; };
 		BFB334D622B26BF900E47B43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */; };
 		BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334DD22B34CEC00E47B43 /* Extensions.swift */; };
+		BFB9F41422BCE9DD00659378 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9F41322BCE9DD00659378 /* PrivacyPolicyViewController.swift */; };
 		BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */; };
 		BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */; };
 		BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */; };
@@ -28,6 +31,8 @@
 		7BF129F9AC67C26CE11C9936 /* Pods-EatingDisorderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.release.xcconfig"; sourceTree = "<group>"; };
 		9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewCell.swift; sourceTree = "<group>"; };
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BF55360422BE4B63000E18BD /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
+		BF55360622BE53F7000E18BD /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		BFB334C022B26A2C00E47B43 /* EatingDisorderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingDisorderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB334C322B26A2C00E47B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB334C822B26A2C00E47B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		BFB334CF22B26A2E00E47B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB334D522B26BF900E47B43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFB334DD22B34CEC00E47B43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BFB9F41322BCE9DD00659378 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		BFEDF91722B5FC6D004B3120 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BFEDF91922B5FCD1004B3120 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,9 @@
 				BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */,
 				BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */,
 				9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */,
+				BFB9F41322BCE9DD00659378 /* PrivacyPolicyViewController.swift */,
+				BF55360422BE4B63000E18BD /* TermsOfUseViewController.swift */,
+				BF55360622BE53F7000E18BD /* AboutUsViewController.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -247,13 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF55360522BE4B63000E18BD /* TermsOfUseViewController.swift in Sources */,
 				BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */,
 				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
+				BF55360722BE53F7000E18BD /* AboutUsViewController.swift in Sources */,
 				9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
+				BFB9F41422BCE9DD00659378 /* PrivacyPolicyViewController.swift in Sources */,
 				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
 				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);

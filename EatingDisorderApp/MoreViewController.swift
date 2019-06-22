@@ -32,6 +32,7 @@ class MoreViewController: UIViewController {
     
     
     @IBAction func printButton(_ sender: UIButton) {
+        
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         print (uid)
