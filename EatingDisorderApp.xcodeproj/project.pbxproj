@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
+		9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */; };
 		9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */; };
 		BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C322B26A2C00E47B43 /* AppDelegate.swift */; };
 		BFB334C922B26A2C00E47B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334C722B26A2C00E47B43 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatingDisorderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF129F9AC67C26CE11C9936 /* Pods-EatingDisorderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.release.xcconfig"; sourceTree = "<group>"; };
+		9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewCell.swift; sourceTree = "<group>"; };
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB334C022B26A2C00E47B43 /* EatingDisorderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingDisorderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 			children = (
 				BFB334C322B26A2C00E47B43 /* AppDelegate.swift */,
 				BFB334C722B26A2C00E47B43 /* Main.storyboard */,
+				9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */,
 				BFB334CA22B26A2E00E47B43 /* Assets.xcassets */,
 				BFB334CC22B26A2E00E47B43 /* LaunchScreen.storyboard */,
 				BFB334CF22B26A2E00E47B43 /* Info.plist */,
@@ -254,6 +257,7 @@
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
+				9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */,
 				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
 				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);
