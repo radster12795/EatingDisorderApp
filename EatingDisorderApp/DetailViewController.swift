@@ -31,10 +31,19 @@ class DetailViewController: UIViewController {
     var binged = ""
     
     
+    @IBAction func exportButton(_ sender: Any) {
+        createPDF(from: view)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.backgroundColor = .orange
+        let subView = UIView(frame: CGRect(x: 20, y: 20, width: 40, height: 60))
+        subView.backgroundColor = .magenta
+        view.addSubview(subView)
         
         dateLabel.text = "\(date)"
         mealLabel.text = "\(meal)"
@@ -48,14 +57,23 @@ class DetailViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func createPDF(from view: UIView) {
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let outputFileURL = documentDirectory.appendingPathComponent("MyPDF.pdf")
+        print("URL:", outputFileURL) // When running on simulator, use the given path to retrieve the PDF file
+        
+        let pdfRenderer = UIGraphicsPDFRenderer(bounds: view.bounds)
+        
+        do {
+            try pdfRenderer.writePDF(to: outputFileURL, withActions: { context in
+                context.beginPage()
+                view.layer.render(in: context.cgContext)
+            })
+        } catch {
+            print("Could not create PDF file: \(error)")
+        }
     }
-    */
+    
+   
 
 }
