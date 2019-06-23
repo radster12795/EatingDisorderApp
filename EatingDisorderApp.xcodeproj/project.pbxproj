@@ -10,6 +10,9 @@
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
 		9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */; };
 		9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */; };
+		BF4DD10822BF517E007574CB /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */; };
+		BF4DD10A22BF5198007574CB /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */; };
+		BF4DD10C22BF51B2007574CB /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */; };
 		BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB334C322B26A2C00E47B43 /* AppDelegate.swift */; };
 		BFB334C922B26A2C00E47B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB334C722B26A2C00E47B43 /* Main.storyboard */; };
 		BFB334CB22B26A2E00E47B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB334CA22B26A2E00E47B43 /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewCell.swift; sourceTree = "<group>"; };
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
+		BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		BFB334C022B26A2C00E47B43 /* EatingDisorderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingDisorderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB334C322B26A2C00E47B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB334C822B26A2C00E47B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				BFEDF91F22B5FDAE004B3120 /* MoreViewController.swift */,
 				BFE04F1722B7126D00143B1B /* HomeTabBarViewController.swift */,
 				9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */,
+				BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */,
+				BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */,
+				BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -251,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB334DE22B34CEC00E47B43 /* Extensions.swift in Sources */,
+				BF4DD10C22BF51B2007574CB /* AboutUsViewController.swift in Sources */,
+				BF4DD10822BF517E007574CB /* PrivacyPolicyViewController.swift in Sources */,
 				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
 				9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */,
@@ -258,6 +269,7 @@
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
 				9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */,
+				BF4DD10A22BF5198007574CB /* TermsOfUseViewController.swift in Sources */,
 				BFEDF91C22B5FD4E004B3120 /* LogMealViewController.swift in Sources */,
 				BFEDF91E22B5FD82004B3120 /* ViewLogTableViewController.swift in Sources */,
 			);
