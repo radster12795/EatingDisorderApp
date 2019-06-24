@@ -14,11 +14,11 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
+    //Init
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.hideKeyboard()
     }
     
     @IBAction func logInButton(_ sender: Any) {
@@ -26,13 +26,13 @@ class LogInViewController: UIViewController {
         guard let password = passwordTextField.text else { return }
         
         
-        
+        //Accessing Firebase to log in user ~Louis Deguito June 17,2019
          Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
             if let error = error {
                 
                 print("Failed to sign in user with error: ", error.localizedDescription)
-                
+                //Alert to pop up when user is unsuccessful in logging in ~Louis Deguito June 17,2019
                 var alert : UIAlertController
                 alert = UIAlertController(title: "Login", message: "Sorry please try again", preferredStyle: .alert)
                 
@@ -45,10 +45,33 @@ class LogInViewController: UIViewController {
             }
             
             print("Successfully logged user in....")
-            self.performSegue(withIdentifier: "toHome", sender: self)
+            
+            //Alert to pop up when user successfully logged in ~Louis Deguito June 24, 2019
+            var alert : UIAlertController
+            alert = UIAlertController(title: "Login", message: "You have successfully logged in!", preferredStyle: .alert)
+            
+            
+            let action2 = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                self.performSegue(withIdentifier: "toHome", sender: self)
+            })
+            alert.addAction(action2)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
    
 
+}
+// Extension to hide keyboard when outside of textfield is pressed ~Louis Deguito June 23,2019
+extension UIViewController{
+    
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

@@ -27,6 +27,7 @@ class SignUpViewController: UIViewController {
         guard let username = usernameTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
+        //Accessing Firebase to create a new user for the application ~Louis Deguito June 17,2019
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             
             if let error = error {
@@ -41,11 +42,30 @@ class SignUpViewController: UIViewController {
             Firestore.firestore().collection("Users").document(uid).setData(values, completion: { (error) in
                 if let error = error {
                     print ("Failed to sign user up with error: ", error.localizedDescription)
+                    
+                    //Alert to pop up when user is unsuccessful in creating a new account ~Louis Deguito June 17,2019
+                    var alert : UIAlertController
+                    alert = UIAlertController(title: "Sign Up", message: "Sorry please try again", preferredStyle: .alert)
+                    
+                    let action = UIAlertAction(title: "Ok", style: .default) { (action) in
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                    
                     return
                 }
                 
                 print("Successfully signed up user....")
-                self.performSegue(withIdentifier: "toHomeFromSignup", sender: self)
+                
+                //Alert to pop up when user has successfully created an account ~Louis Deguito June 24,2019
+                var alert : UIAlertController
+                alert = UIAlertController(title: "Sign Up", message: "You have successfully created an account", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    self.performSegue(withIdentifier: "toHomeFromSignup", sender: self)
+                })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
             })
             
         }
