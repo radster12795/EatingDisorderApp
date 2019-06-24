@@ -12,13 +12,19 @@ class ViewLogTableViewCell: UITableViewCell{
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var colourView: UIView!
     
   
    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        colourView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        colourView.layer.shadowColor = UIColor.black.cgColor
+        colourView.layer.shadowRadius = 5
         
+        colourView.layer.shadowOpacity = 0.40
+        colourView.layer.masksToBounds = false;
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

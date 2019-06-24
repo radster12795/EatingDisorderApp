@@ -11,7 +11,6 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var companionLabel: UILabel!
-    
     @IBOutlet weak var mealLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var bingedLabel: UILabel!

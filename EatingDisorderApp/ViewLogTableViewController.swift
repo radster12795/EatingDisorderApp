@@ -34,7 +34,6 @@ class ViewLogTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.contentInset = UIEdgeInsets(top: 110,left: 0,bottom: 0,right: 0)
         self.tableView.separatorStyle = .none
 
         
@@ -67,7 +66,7 @@ class ViewLogTableViewController: UITableViewController {
                     
                     let age = data["Age"] as? String ?? ""
                     
-                    let binged = data["Binged"] as? String ?? ""
+                    let binged = data["Binged?"] as? String ?? ""
                     
                     let companion = data["Companion"] as? String ?? ""
                     
@@ -122,12 +121,13 @@ class ViewLogTableViewController: UITableViewController {
          cell.dateLabel.text = dates.dates
          cell.mealLabel.text = dates.meal
         
+
         
         return cell
     }
  
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 100
     }
 
     
@@ -135,20 +135,6 @@ class ViewLogTableViewController: UITableViewController {
         if tableView.cellForRow(at: indexPath as IndexPath) != nil{
             self.performSegue(withIdentifier: "detailSegue", sender: self)
         }
-        
-      /*  let dates = datesArray[indexPath.row]
-        dvc.date = dates.dates
-        dvc.age = dates.age
-        dvc.meal = dates.meal
-        dvc.binged = dates.binged
-        dvc.gender = dates.gender
-        dvc.companion = dates.companion
-        dvc.feeling = dates.feeling
-        dvc.food = dates.food
-        dvc.place = dates.place
-        
-        */
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
