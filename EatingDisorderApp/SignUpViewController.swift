@@ -32,6 +32,14 @@ class SignUpViewController: UIViewController {
             
             if let error = error {
                 print("Failed to sign user up with error: ", error.localizedDescription)
+                var alert : UIAlertController
+                alert = UIAlertController(title: "Sign Up", message: "Sorry please try again", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "Ok", style: .default) { (action) in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
                 return
             }
             
