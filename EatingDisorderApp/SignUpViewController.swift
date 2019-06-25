@@ -62,7 +62,7 @@ class SignUpViewController: UIViewController {
                 var alert : UIAlertController
                 alert = UIAlertController(title: "Sign Up", message: "You have successfully created an account", preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    self.performSegue(withIdentifier: "toHomeFromSignup", sender: self)
+                    self.performSegue(withIdentifier: "toSignUp2", sender: self)
                 })
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)

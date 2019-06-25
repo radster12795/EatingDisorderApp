@@ -10,6 +10,8 @@
 		99A036DD266E959B79DFC071 /* Pods_EatingDisorderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751AFE25AA7C7720DC7FFB74 /* Pods_EatingDisorderApp.framework */; };
 		9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */; };
 		9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */; };
+		BF253D2E22C1B76B000FE319 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF253D2D22C1B76B000FE319 /* SignUp2ViewController.swift */; };
+		BF253D3022C1B789000FE319 /* SignUp3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF253D2F22C1B789000FE319 /* SignUp3ViewController.swift */; };
 		BF4DD10822BF517E007574CB /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */; };
 		BF4DD10A22BF5198007574CB /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */; };
 		BF4DD10C22BF51B2007574CB /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */; };
@@ -33,6 +35,8 @@
 		9ABBA4BD22BE00BB00695958 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AE8F59322B9EE3800CC4348 /* ViewLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogTableViewCell.swift; sourceTree = "<group>"; };
 		BDF21406C7C3419B4D9ACD85 /* Pods-EatingDisorderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingDisorderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingDisorderApp/Pods-EatingDisorderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BF253D2D22C1B76B000FE319 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
+		BF253D2F22C1B789000FE319 /* SignUp3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3ViewController.swift; sourceTree = "<group>"; };
 		BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
 		BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				BF4DD10722BF517E007574CB /* PrivacyPolicyViewController.swift */,
 				BF4DD10922BF5198007574CB /* TermsOfUseViewController.swift */,
 				BF4DD10B22BF51B2007574CB /* AboutUsViewController.swift */,
+				BF253D2D22C1B76B000FE319 /* SignUp2ViewController.swift */,
+				BF253D2F22C1B789000FE319 /* SignUp3ViewController.swift */,
 			);
 			path = EatingDisorderApp;
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 				BF4DD10822BF517E007574CB /* PrivacyPolicyViewController.swift in Sources */,
 				BFEDF91A22B5FCD1004B3120 /* SignUpViewController.swift in Sources */,
 				BFEDF91822B5FC6D004B3120 /* LogInViewController.swift in Sources */,
+				BF253D2E22C1B76B000FE319 /* SignUp2ViewController.swift in Sources */,
 				9AE8F59422B9EE3800CC4348 /* ViewLogTableViewCell.swift in Sources */,
 				BFB334C422B26A2C00E47B43 /* AppDelegate.swift in Sources */,
+				BF253D3022C1B789000FE319 /* SignUp3ViewController.swift in Sources */,
 				BFEDF92022B5FDAE004B3120 /* MoreViewController.swift in Sources */,
 				BFE04F1822B7126D00143B1B /* HomeTabBarViewController.swift in Sources */,
 				9ABBA4BE22BE00BB00695958 /* DetailViewController.swift in Sources */,
