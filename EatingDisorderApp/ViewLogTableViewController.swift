@@ -25,10 +25,16 @@ struct Dates {
 class ViewLogTableViewController: UITableViewController {
     
 
+    @IBAction func refreshButton(_ sender: Any) {
+        datesArray.removeAll()
+        db = Firestore.firestore()
+        loadData()
+    }
     var db: Firestore!
     
     var datesArray = [Dates]()
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +48,10 @@ class ViewLogTableViewController: UITableViewController {
         
         
     }
+    
+    
+    
+
 
     //Retrieving data from current user Michael Singh 17/06/2019
     func loadData(){
@@ -84,9 +94,6 @@ class ViewLogTableViewController: UITableViewController {
                     
                     let newDate = Dates(dates: String(mySubstring), meal: meal, age: age, binged: binged, companion: companion, feeling: feeling, food: food, gender: gender, place: place)
                         self.datesArray.append(newDate)
-                    
-                    print(dates)
-                    print(meal)
                     
                 }
                 
