@@ -32,6 +32,11 @@ class DetailViewController: UIViewController {
     
     @IBAction func exportButton(_ sender: Any) {
         createPDF(from: view)
+        var alert : UIAlertController
+        alert = UIAlertController(title: "Export to PDF", message: "Successfully Saved to PDF", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
