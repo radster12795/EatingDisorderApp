@@ -23,7 +23,7 @@ class ViewLogTableViewCell: UITableViewCell{
         colourView.layer.shadowColor = UIColor.black.cgColor
         colourView.layer.shadowRadius = 5
         
-        colourView.layer.shadowOpacity = 0.40
+        colourView.layer.shadowOpacity = 0.50
         colourView.layer.masksToBounds = false;
     }
 
