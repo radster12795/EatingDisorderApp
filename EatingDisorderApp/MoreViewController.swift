@@ -31,11 +31,7 @@ class MoreViewController: UIViewController {
     
     
     
-    @IBAction func printButton(_ sender: UIButton) {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-        print (uid)
-    }
+    
     
     
     // Function to sign out from firebase ~Louis Deguito June 17,2019
