@@ -42,6 +42,16 @@ class LogMealViewController: UIViewController {
         guard let gender = genderTextField.text else { return }
         guard let age = ageTextField.text else { return }
         
+        
+        //Validation
+        if food.isEmpty || place.isEmpty || companion.isEmpty || feeling.isEmpty || meal.isEmpty || binge.isEmpty {
+            
+            let alert = UIAlertController(title: "Error", message: "The following fields must not be left empty: Food, Place, Companion, Feeling, Meal, Binged? ", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+        else
+        {
         //Auto current date and time ~Louis Deguito June 17,2019
         let date = Date()
         let format = DateFormatter()
@@ -68,6 +78,7 @@ class LogMealViewController: UIViewController {
         
         present(alertController, animated: true, completion: nil)
         textFieldClear()
+        }
     }
     
     //Function to clear textfields after saving a meal log ~Louis Deguito June 17,2019
