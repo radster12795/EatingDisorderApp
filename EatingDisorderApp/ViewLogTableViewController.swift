@@ -34,9 +34,8 @@ class ViewLogTableViewController: UITableViewController {
     
     var datesArray = [Dates]()
     
-
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -47,11 +46,8 @@ class ViewLogTableViewController: UITableViewController {
         loadData()
         
         
-    }
-    
-    
-    
 
+    }
 
     //Retrieving data from current user Michael Singh 17/06/2019
     func loadData(){
@@ -122,7 +118,6 @@ class ViewLogTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as! ViewLogTableViewCell
 
-        // Configure the cell...
         let dates = datesArray[indexPath.row]
         
          cell.dateLabel.text = dates.dates
@@ -134,7 +129,7 @@ class ViewLogTableViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 105
     }
 
     
