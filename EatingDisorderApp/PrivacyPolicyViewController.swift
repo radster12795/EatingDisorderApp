@@ -12,7 +12,7 @@ class PrivacyPolicyViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
-    
+    // Privacy Policy ~Louis Deguito June 25, 2019
     var allFormattedDescriptions = [
         Formatted(heading: "Privacy Policy", descriptionText: "Louis and Michael Group built the Eat Up! app as a Free app. This SERVICE is provided by Louis and Michael Group at no cost and is intended for use as is. This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service. If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Eat Up! unless otherwise defined in this Privacy Policy."),
         Formatted(heading: "Information Collection and Use", descriptionText: "For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Email, Username, Password, Gender, Age, Food, Place, Companion, Feeling, Meal, Binge. The information that we request will be retained by us and used as described in this privacy policy.The app does use third party services that may collect information used to identify you.Link to privacy policy of third party service providers used by the app •    Firebase Analytics"),
@@ -37,6 +37,7 @@ class PrivacyPolicyViewController: UIViewController {
         textView.attributedText = textContent
     }
     
+    //Struct and init for the format of the Terms of use ~Louis Deguito June 25,2019
     struct Formatted {
         var heading: String
         var descriptionText: String
