@@ -12,7 +12,7 @@ class TermsOfUseViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
-    
+    //Terms of Use ~Louis Deguito June 25,2019
     var allFormattedDescriptions = [Formatted(heading: "TERMS OF USE", descriptionText: ""),
                                     Formatted(heading: "1. Terms of Use", descriptionText: "By downloading, browsing, accessing or using this mobile application (“Eat Up!”), you agree to be bound by these Terms and Conditions of Use. We reserve the right to amend these terms and conditions at any time. If you disagree with any of these Terms and Conditions of Use, you must immediately discontinue your access to the Mobile Application and your use of the services offered on the Mobile Application. Continued use of the Mobile Application will constitute acceptance of these Terms and Conditions of Use, as may be amended from time to time."),
                                     Formatted(heading: "2. Definitions", descriptionText: "In these Terms and Conditions of Use, the following capitalised terms shall have the following meanings, except where the context otherwise requires: 'Account' means an account created by a User on the Mobile Application as part of Registration. 'Privacy Policy' means the privacy policy set out in Clause 14 of these Terms and Conditions of Use. 'Register' means to create an Account on the Mobile Application and 'Registration' means the act of creating such an Account. 'Services' means all the services provided by Eat Up! via the Mobile Application to Users, and 'Service' means any one of them, 'Users' means users of the Mobile Application, including you and 'User' means any one of them."),
@@ -31,7 +31,7 @@ class TermsOfUseViewController: UIViewController {
         textView.attributedText = textContent
     }
     
-    
+    //Struct and init for the format of the Terms of use ~Louis Deguito June 25,2019
     struct Formatted {
         var heading: String
         var descriptionText: String
